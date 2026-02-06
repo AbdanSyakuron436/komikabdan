@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Comic Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin Panel - Upload Komik</h1>
+    <form id="comicForm">
+        <div class="form-group">
+            <label>Judul Komik:</label>
+            <input type="text" id="comicTitle" placeholder="Masukin judul komik" required />
+        </div>
+        <button type="button" onclick="addChapter()">Tambah Chapter</button>
+        <button type="button" onclick="saveComic()">Simpan Komik</button>
+    </form>
+    <div id="chaptersContainer"></div>
+    <script src="admin.js"></script>
+</body>
+</html>
